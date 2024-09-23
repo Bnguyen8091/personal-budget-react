@@ -518,6 +518,14 @@ footer p {
   text-align: center;
 }
 
+
+.chart-container {
+  width: 100%;
+  max-width: 300px; /* Control max width */
+  margin: auto; /* Center the chart */
+}
+
+
 /* Responsive Design */
 @media screen and (min-width: 768px) {
   main article {

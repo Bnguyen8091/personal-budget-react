@@ -7,11 +7,16 @@ import {
 
 function Menu() {
   return (
-    <nav>
+    <nav
+        role="navigation"
+        aria-label="Main menu"
+        itemScope
+        itemType="https://schema.org.SiteNavigationElement"
+    >
         <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/login">Login</Link></li>
+            <li><Link itemProp="/">Home</Link></li>
+            <li><Link itemProp="/about">About</Link></li>
+            <li><Link itemProp="/login">Login</Link></li>
         </ul>
     </nav>
   );
